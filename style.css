@@ -1,0 +1,130 @@
+* {
+    --text-color: #eb802b;
+    --background-color: #0e1318;
+    --block-color: #1e2732;
+    --shadow-color: #0b0e12;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 150%;
+    
+    box-sizing: border-box;
+    margin:0px;
+
+    transition: .1s ease-in;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+a, h1, h2, h3, li, p{
+    color: var(--text-color);
+}
+
+h2 {
+    text-align: center;
+}
+
+hr{
+    border-color: var(--text-color);
+    margin: 10px 0px;
+}
+
+.interactable:hover{
+    transform: translateY(3px);
+}
+
+.navbar {
+    background-color: var(--block-color);;
+
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 15px 25px;
+    width: 100%;
+    height: fit-content;
+    box-shadow: 0px 5px 5px var(--shadow-color);
+}
+
+.navbar ul{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.navbar li{
+    font-size: 1.5em;
+}
+
+.navbar li:hover{
+    transform: translateY(3px);
+}
+
+.navbar a:hover{
+    color: #fff;
+
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.bounding-box{
+    width: 80%;
+    margin: auto;
+    padding: 25px 0px;
+    text-align: center;
+}
+
+.content-box{
+    background-color: var(--block-color);
+    text-align: left;
+    justify-content: center;
+
+    margin: 25px auto 5% auto;
+    padding: 25px;
+    width: fit-content;
+    height: fit-content;
+
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px var(--shadow-color);
+}
+
+.content-box li, p{
+    color: #fff;
+}
+
+.game-image{
+    display: block;
+    border-radius: 20px;
+    max-width: 640px;
+    max-height: 320px;
+    margin: auto;
+    image-rendering: pixelated;
+}
+
+.caption {
+    padding-top: 5px;
+    text-align: center;
+}
+
+.pixel-image{
+    image-rendering: pixelated;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px var(--shadow-color);
+}
+
+.icon-box{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
